@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Hitung Kubus</string>
+    <string name="title">Dalam geometri, Kubus adalah bangun ruang tiga dimensi yang dibatasi oleh enam bidang sisi yang kongruen berbentuk bujur sangkar. Kubus memiliki 6 sisi, 12 rusuk, dan 8 titik sudut. Kubus juga disebut dengan Bidang enam beraturan, selain itu kubus juga merupakan bentuk khusus dalam prisma segi empat, Kubus.</string>
+    <string name="min">Masukan Bilangan</string>
+    <string name="cari">Hitung</string>
+    <string name="clear">Hapus</string>
+    <string name="positive">Masukan harus bernilai positive.</string>
+    <string name="blank">Masukan nilai bilang.</string>
+    <string name="hasil_x">Volume: %1$.2f</string>
+    <string name="hasil_xx">Luas Sisi: %1$.2f</string>
+</resources>
