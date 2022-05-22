@@ -11,5 +11,5 @@ interface Dao {
     fun insert(mobpro: Entity)
 
     @Query("SELECT * FROM mobpro ORDER BY id DESC LIMIT 1")
-    fun getLastBmi(): LiveData<Entity?>
+    fun getLastData(): LiveData<Entity?>
 }

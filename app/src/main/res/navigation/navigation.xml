@@ -6,7 +6,7 @@
     app:startDestination="@id/hitungFragment">
     <fragment
         android:id="@+id/hitungFragment"
-        android:name="com.d3if2022.hitungvolume.ui.HitungFragment"
+        android:name="com.d3if2022.hitungvolume.ui.hitung.HitungFragment"
         android:label="fragment_hitung"
         tools:layout="@layout/fragment_hitung" >
         <action

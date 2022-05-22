@@ -9,5 +9,5 @@ import androidx.room.PrimaryKey
     var tanggal: Long = System.currentTimeMillis(),
     var input: Float,
     var volume: Float,
-    var Luas: Float
+    var luas: Float
 )

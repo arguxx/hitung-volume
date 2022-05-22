@@ -1,8 +1,9 @@
-package com.d3if2022.hitungvolume.ui
+package com.d3if2022.hitungvolume.ui.hitung
 
 import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
+import android.util.Log
 import android.view.*
 import android.widget.Toast
 import androidx.fragment.app.Fragment
@@ -10,12 +11,16 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.d3if2022.hitungvolume.R
 import com.d3if2022.hitungvolume.databinding.FragmentHitungBinding
+import com.d3if2022.hitungvolume.db.Db
 import com.d3if2022.hitungvolume.model.HasilHitung
 
 class HitungFragment : Fragment() {
     private lateinit var binding: FragmentHitungBinding
-    private val viewModel: MainViewModel by lazy {
-        ViewModelProvider(requireActivity())[MainViewModel::class.java]
+
+    private val viewModel: HitungViewModel by lazy {
+        val db = Db.getInstance(requireContext())
+        val factory = HitungViewModelFactory(db.dao)
+        ViewModelProvider(this, factory)[HitungViewModel::class.java]
     }
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View {
@@ -25,6 +30,9 @@ class HitungFragment : Fragment() {
 
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        viewModel.data.observe(viewLifecycleOwner, {
+            if (it == null) return@observe
+            Log.d("HitungFragment", "Data tersimpan. ID = ${it.id}") })
         binding.cari.setOnClickListener { cari() }
         binding.clear.setOnClickListener {
             binding.minInp.setText("")
