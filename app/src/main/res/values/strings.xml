@@ -8,4 +8,10 @@
     <string name="blank">Masukan nilai bilang.</string>
     <string name="hasil_x">Volume: %1$.2f</string>
     <string name="hasil_xx">Luas Sisi: %1$.2f</string>
+    <string name="tentang_aplikasi">Tentang Aplikasi</string>
+    <string name="copyright">Dalam geometri, Kubus adalah bangun ruang tiga dimensi yang dibatasi oleh enam bidang sisi yang kongruen berbentuk bujur sangkar. Kubus memiliki 6 sisi, 12 rusuk, dan 8 titik sudut. Kubus juga disebut dengan Bidang enam beraturan, selain itu kubus juga merupakan bentuk khusus dalam prisma segi empat, Kubus.</string>
+    <string name="lihat_saran">Lihat Saran</string>
+    <string name="bagikan">Bagikan</string>
+    <string name="bagikan_template">Volume: %1$s\nluas: %2$s</string>
+    <string name="intro">Hai! selamat datang di aplikasi penghitung Volume dan Luas sisi Kubus</string>
 </resources>
