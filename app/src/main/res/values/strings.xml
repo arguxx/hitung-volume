@@ -12,6 +12,10 @@
     <string name="copyright">Dalam geometri, Kubus adalah bangun ruang tiga dimensi yang dibatasi oleh enam bidang sisi yang kongruen berbentuk bujur sangkar. Kubus memiliki 6 sisi, 12 rusuk, dan 8 titik sudut. Kubus juga disebut dengan Bidang enam beraturan, selain itu kubus juga merupakan bentuk khusus dalam prisma segi empat, Kubus.</string>
     <string name="lihat_saran">Lihat Saran</string>
     <string name="bagikan">Bagikan</string>
+    <string name="belum_ada_data">Belum ada data</string>
     <string name="bagikan_template">Volume: %1$s\nluas: %2$s</string>
+    <string name="histori">Histori</string>
+    <string name="input_x">Rusuk: %1$.2f</string>
+    <string name="value_x">Volume: %1$.1f - Luas: %2$.1f</string>
     <string name="intro">Hai! selamat datang di aplikasi penghitung Volume dan Luas sisi Kubus</string>
 </resources>

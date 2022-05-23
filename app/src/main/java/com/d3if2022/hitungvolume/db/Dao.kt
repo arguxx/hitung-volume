@@ -10,6 +10,6 @@ interface Dao {
     @Insert
     fun insert(mobpro: Entity)
 
-    @Query("SELECT * FROM mobpro ORDER BY id DESC LIMIT 1")
-    fun getLastData(): LiveData<Entity?>
+    @Query("SELECT * FROM mobpro ORDER BY id DESC")
+    fun getLastData(): LiveData<List<Entity?>>
 }

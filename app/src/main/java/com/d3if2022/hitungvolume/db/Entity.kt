@@ -7,7 +7,7 @@ import androidx.room.PrimaryKey
     @PrimaryKey(autoGenerate = true)
     var id: Long = 0L,
     var tanggal: Long = System.currentTimeMillis(),
-    var input: Float,
+    var masukan: Float,
     var volume: Float,
     var luas: Float
 )

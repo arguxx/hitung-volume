@@ -3,7 +3,6 @@ package com.d3if2022.hitungvolume.ui.hitung
 import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
-import android.util.Log
 import android.view.*
 import android.widget.Toast
 import androidx.fragment.app.Fragment
@@ -30,9 +29,6 @@ class HitungFragment : Fragment() {
 
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        viewModel.data.observe(viewLifecycleOwner, {
-            if (it == null) return@observe
-            Log.d("HitungFragment", "Data tersimpan. ID = ${it.id}") })
         binding.cari.setOnClickListener { cari() }
         binding.clear.setOnClickListener {
             binding.minInp.setText("")
@@ -56,8 +52,8 @@ class HitungFragment : Fragment() {
 
     private fun showResult(result: HasilHitung?) {
         if (result == null) return
-        binding.hasil.text = getString(R.string.hasil_x, result.hasilVolume)
-        binding.hasil2.text = getString(R.string.hasil_xx, result.hasilSisi)
+        binding.hasil.text = getString(R.string.hasil_x, result.luas)
+        binding.hasil2.text = getString(R.string.hasil_xx, result.volume)
         binding.buttonGroup.visibility = View.VISIBLE
     }
 
@@ -66,10 +62,15 @@ class HitungFragment : Fragment() {
         inflater.inflate(R.menu.options_menu, menu)
     }
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (item.itemId == R.id.menu_about) {
-            findNavController().navigate(
+        when(item.itemId) {
+            R.id.menu_histori -> {
+                findNavController().navigate(R.id.action_hitungFragment_to_historiFragment)
+                return true
+            }
+            R.id.menu_about -> { findNavController().navigate(
                 R.id.action_hitungFragment_to_aboutFragment)
-            return true
+                return true
+            }
         }
         return super.onOptionsItemSelected(item)
     }
