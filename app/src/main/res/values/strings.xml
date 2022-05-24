@@ -18,4 +18,9 @@
     <string name="input_x">Rusuk: %1$.2f</string>
     <string name="value_x">Volume: %1$.1f - Luas: %2$.1f</string>
     <string name="intro">Hai! selamat datang di aplikasi penghitung Volume dan Luas sisi Kubus</string>
+    <string name="share">SHARE</string>
+    <string name="hapus_histori">Hapus Histori</string>
+    <string name="konfirmasi_hapus">Hapus semua histori?</string>
+    <string name="hapus">Hapus</string>
+    <string name="batal">Batal</string>
 </resources>
