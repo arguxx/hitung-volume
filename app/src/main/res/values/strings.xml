@@ -30,4 +30,5 @@
     <string name="judul_aplikasi">Tentang Aplikasi</string>
     <string name="tentang_pembuat">Tentang Pembuat</string>
     <string name="sipembuat">Halo perkenalkan, nama saya %1$s, sekarang saya sedang berkuliah di %2$s, tetapi saya bertempat tinggal di %3$s</string>
+    <string name="koneksi_error">Koneksi error</string>
 </resources>

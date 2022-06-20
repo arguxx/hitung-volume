@@ -11,6 +11,7 @@ import com.d3if2022.hitungvolume.R
 import com.d3if2022.hitungvolume.databinding.FragmentAboutBinding
 
 import com.d3if2022.hitungvolume.model.ApiModel
+import com.d3if2022.hitungvolume.network.ApiStatus
 
 
 class AboutFragment : Fragment() {
@@ -30,6 +31,26 @@ class AboutFragment : Fragment() {
                 .error(R.drawable.ic_baseline_broken_image_24)
                 .into(binding.foto)
         })
+        viewModel.getStatus().observe(viewLifecycleOwner) {
+            updateProgress(it)
+        }
         return binding.root
+    }
+    private fun updateProgress(status: ApiStatus) {
+        when (status) {
+            ApiStatus.LOADING -> {
+                binding.showBiodata.visibility = View.GONE
+                binding.progressBar.visibility = View.VISIBLE
+            }
+            ApiStatus.SUCCESS -> {
+                binding.showBiodata.visibility = View.VISIBLE
+                binding.progressBar.visibility = View.GONE
+            }
+            ApiStatus.FAILED -> {
+                binding.showBiodata.visibility = View.GONE
+                binding.progressBar.visibility = View.GONE
+                binding.networkError.visibility = View.VISIBLE
+            }
+        }
     }
 }

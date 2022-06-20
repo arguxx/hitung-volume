@@ -27,3 +27,4 @@ object AboutApi {
     val service: AboutApiService by lazy {
         retrofit.create(AboutApiService::class.java) }
 }
+enum class ApiStatus { LOADING, SUCCESS, FAILED }
