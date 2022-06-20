@@ -38,6 +38,8 @@ class HitungFragment : Fragment() {
         }
         viewModel.getHasilHitung().observe(requireActivity(), { showResult(it) })
         binding.shareButton.setOnClickListener { shareData() }
+        viewModel.scheduleUpdater(requireActivity().application)
+
     }
     private fun cari() {
         val masukan = binding.minInp.text.toString()

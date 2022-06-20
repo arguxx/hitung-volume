@@ -31,4 +31,8 @@
     <string name="tentang_pembuat">Tentang Pembuat</string>
     <string name="sipembuat">Halo perkenalkan, nama saya %1$s, sekarang saya sedang berkuliah di %2$s, tetapi saya bertempat tinggal di %3$s</string>
     <string name="koneksi_error">Koneksi error</string>
+    <string name="channel_name">Updater</string>
+    <string name="channel_desc">Ayo kembali ke Aplikasi!</string>
+    <string name="notif_title">Ayo kembali berhitung</string>
+    <string name="notif_text">Coba lagi biar gak bingung</string>
 </resources>
