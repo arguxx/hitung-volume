@@ -3,7 +3,6 @@ package com.d3if2022.hitungvolume.ui.histori
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.d3if2022.hitungvolume.db.Dao
-import com.d3if2022.hitungvolume.db.Entity
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -16,5 +15,4 @@ class HistoryViewModel(private val db: Dao) : ViewModel() {
             db.clearData()
         }
     }
-
 }

@@ -8,12 +8,14 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.RecyclerView
 import com.d3if2022.hitungvolume.R
+import com.d3if2022.hitungvolume.data.SettingDataStore
 import com.d3if2022.hitungvolume.databinding.FragmentHistoryBinding
 import com.d3if2022.hitungvolume.db.Db
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class HistoryFragment : Fragment() {
     private lateinit var myAdapter: HistoryAdapter
+    private lateinit var layoutDataStore: SettingDataStore
 
     private lateinit var binding: FragmentHistoryBinding
     private val viewModel: HistoryViewModel by lazy {

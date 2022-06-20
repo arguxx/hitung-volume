@@ -23,4 +23,11 @@
     <string name="konfirmasi_hapus">Hapus semua histori?</string>
     <string name="hapus">Hapus</string>
     <string name="batal">Batal</string>
+    <string name="nama">nama</string>
+    <string name="kampus">kampus</string>
+    <string name="alamat">alamat</string>
+    <string name="foto">foto</string>
+    <string name="judul_aplikasi">Tentang Aplikasi</string>
+    <string name="tentang_pembuat">Tentang Pembuat</string>
+    <string name="sipembuat">Halo perkenalkan, nama saya %1$s, sekarang saya sedang berkuliah di %2$s, tetapi saya bertempat tinggal di %3$s</string>
 </resources>
